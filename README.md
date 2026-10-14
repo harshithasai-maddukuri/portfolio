@@ -2,7 +2,7 @@
 
 My personal portfolio: projects, experience, and how to reach me.
 
-**Live:** https://YOUR-DOMAIN.vercel.app
+**Live:** https://portfolio-ten-phi-4jc0nzzqmc.vercel.app
 
 It's a static site in a single `index.html` (HTML, CSS, and JavaScript together), with a small Express server for previewing it locally.
 
