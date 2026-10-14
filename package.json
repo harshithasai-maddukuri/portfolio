@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Personal portfolio — CS Student | Frontend Dev | Web Dev | SDE",
+  "description": "Personal portfolio of Harshitha Sai Maddukuri, Full Stack Software Engineer",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -16,7 +16,13 @@
   "devDependencies": {
     "nodemon": "^3.0.1"
   },
-  "keywords": ["portfolio", "frontend", "web-dev", "sde", "cs-student"],
-  "author": "Your Name",
+  "keywords": [
+    "portfolio",
+    "full-stack",
+    "software-engineer",
+    "react",
+    "nextjs"
+  ],
+  "author": "Harshitha Sai Maddukuri",
   "license": "MIT"
-}ls
+}
