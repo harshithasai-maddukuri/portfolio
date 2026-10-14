@@ -3,464 +3,281 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Harshitha Sai Maddukuri — Full Stack Software Engineer</title>
-<meta name="description" content="Full Stack Software Engineer. MS CS at Northeastern (May 2027). Open to full-time SWE roles. React, Next.js, TypeScript, Node.js, Java, PostgreSQL.">
-<meta property="og:title" content="Harshitha Sai Maddukuri — Full Stack Software Engineer">
-<meta property="og:description" content="Two SWE internships, two live full-stack apps, one published paper. Open to full-time roles from May 2027.">
-<meta property="og:type" content="website">
+<title>Harshitha Sai Maddukuri — Software Engineer</title>
+<meta name="description" content="Full-stack software engineer finishing an MS in CS at Northeastern. Open to full-time roles from May 2027.">
+<meta property="og:title" content="Harshitha Sai Maddukuri — Software Engineer">
+<meta property="og:description" content="Full-stack engineer. Production work at Virtusa, interning at IpserLab, open to full-time roles from May 2027.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23006D6D'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23F7F4EE' text-anchor='middle'%3EHM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F7F4EE; --surface:#FFFFFF; --ink:#111111; --body:#3A3A3A; --muted:#6F6A62; --line:#E3DED4;
-  --teal:#006D6D; --teal-soft:#E0F0F0; --teal-line:#B0D8D8; --amber:#B8730F; --amber-soft:#FDF3E0;
-  --hire-bg:#0F2E2E; --hire-ink:#F7F4EE; --hire-muted:rgba(247,244,238,.7); --hire-accent:#5CD8C8;
-  --fh:'Playfair Display', Georgia, 'Times New Roman', serif;
+  --bg:#F7F4EE; --surface:#FFFFFF; --ink:#141414; --body:#3A3A3A; --muted:#6F6A62; --line:#E3DED4;
+  --teal:#006D6D; --teal-soft:#E0F0F0; --teal-line:#B0D8D8;
+  --fh:'Playfair Display', Georgia, serif;
   --fb:'Outfit', 'Segoe UI', system-ui, -apple-system, sans-serif;
   --fm:'JetBrains Mono', ui-monospace, Menlo, monospace;
-  color-scheme:light;
-  box-sizing:border-box;
-  padding-top:env(safe-area-inset-top,0px);
-  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#121614; --surface:#1A201E; --ink:#F2EFE8; --body:#CFCAC0; --muted:#9A958C; --line:#2C3431;
-    --teal:#4FC4B8; --teal-soft:#16302E; --teal-line:#245452; --amber:#E6A647; --amber-soft:#2E2414;
-    --hire-bg:#0B2423; color-scheme:dark;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#121614; --surface:#1A201E; --ink:#F2EFE8; --body:#CFCAC0; --muted:#9A958C; --line:#2C3431;
-  --teal:#4FC4B8; --teal-soft:#16302E; --teal-line:#245452; --amber:#E6A647; --amber-soft:#2E2414;
-  --hire-bg:#0B2423; color-scheme:dark;
-}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121614;--surface:#1A201E;--ink:#F2EFE8;--body:#CFCAC0;--muted:#9A958C;--line:#2C3431;--teal:#4FC4B8;--teal-soft:#16302E;--teal-line:#245452;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121614;--surface:#1A201E;--ink:#F2EFE8;--body:#CFCAC0;--muted:#9A958C;--line:#2C3431;--teal:#4FC4B8;--teal-soft:#16302E;--teal-line:#245452;color-scheme:dark}
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
-img{max-width:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:1.0625rem;line-height:1.7;-webkit-font-smoothing:antialiased}
 a{color:var(--teal)}
 p{margin:0 0 1em}
-h1,h2,h3,h4{margin:0;font-family:var(--fh);letter-spacing:-.02em;line-height:1.1}
+h1,h2,h3{margin:0;font-family:var(--fh);letter-spacing:-.02em;line-height:1.12}
 :focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:6px}
-.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
-.eyebrow{font-family:var(--fm);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 12px}
-.sec{padding:clamp(64px,9vw,112px) 0}
-.sec-title{font-size:clamp(2rem,4.2vw,3rem);font-weight:900}
-.sec-title em{font-style:italic;color:var(--teal)}
-.sec-sub{color:var(--muted);max-width:56ch;margin-top:14px}
+.wrap{max-width:980px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 
 /* nav */
 .nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav .wrap{height:64px;display:flex;align-items:center;gap:6px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);margin-right:auto}
-.mono{width:36px;height:36px;border-radius:50%;background:var(--teal);color:var(--bg);display:grid;place-items:center;font-family:var(--fh);font-weight:700;font-size:.95rem}
-.brand b{font-family:var(--fh);font-size:1.05rem}
+.nav .wrap{height:64px;display:flex;align-items:center;gap:4px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);margin-right:auto;font-family:var(--fh);font-weight:700;font-size:1.05rem}
+.mono{width:34px;height:34px;border-radius:50%;background:var(--teal);color:var(--bg);display:grid;place-items:center;font-size:.9rem}
 .nav a.l{color:var(--muted);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:8px}
 .nav a.l:hover{color:var(--ink);background:var(--line)}
-.nav .cta{white-space:nowrap;background:var(--teal);color:var(--bg);text-decoration:none;font-weight:600;font-size:.92rem;padding:9px 16px;border-radius:9px;margin-left:6px}
 .theme{font-size:1.1rem;line-height:1;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;margin-left:6px}
-@media (max-width:860px){.nav a.l{display:none}}
-@media (max-width:520px){.brand .full{display:none}}
-@media (min-width:521px){.brand .short{display:none}}
-@media (max-width:600px){.portrait-wrap{display:none}}
+@media (max-width:760px){.nav a.l{display:none}}
 
 /* hero */
-.hero{padding:clamp(48px,8vw,96px) 0 clamp(40px,6vw,72px);overflow-x:clip}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(32px,5vw,64px);align-items:center}
+.hero{padding:clamp(56px,9vw,104px) 0 clamp(40px,6vw,64px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);gap:clamp(28px,5vw,56px);align-items:center}
 .status{display:inline-flex;align-items:center;gap:10px;font-family:var(--fm);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);background:var(--teal-soft);border:1px solid var(--teal-line);padding:7px 14px;border-radius:999px}
-.pulse{width:8px;height:8px;border-radius:50%;background:#22B07D;box-shadow:0 0 0 0 rgba(34,176,125,.5);animation:pulse 2s infinite}
-@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(34,176,125,0)}100%{box-shadow:0 0 0 0 rgba(34,176,125,0)}}
-.hero h1{font-size:clamp(2.9rem,7vw,5.2rem);font-weight:900;line-height:1.02;margin:26px 0 24px}
+.pulse{width:8px;height:8px;border-radius:50%;background:#22B07D}
+.hero h1{font-size:clamp(2.7rem,6.4vw,4.6rem);font-weight:900;margin:24px 0 20px}
 .hero h1 em{color:var(--teal)}
-.lede{font-size:clamp(1.08rem,1.5vw,1.22rem);color:var(--body);max-width:54ch}
-.lede strong{color:var(--ink)}
-.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.btn{display:inline-flex;align-items:center;gap:8px;font:600 1rem var(--fb);padding:13px 22px;border-radius:10px;text-decoration:none;border:1.5px solid var(--line);color:var(--ink);background:var(--surface);cursor:pointer;transition:transform .15s,border-color .15s}
+.lede{font-size:clamp(1.08rem,1.5vw,1.2rem);color:var(--body);max-width:52ch}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 .98rem var(--fb);padding:12px 20px;border-radius:10px;text-decoration:none;border:1.5px solid var(--line);color:var(--ink);background:var(--surface);transition:transform .15s,border-color .15s}
 .btn:hover{transform:translateY(-2px);border-color:var(--ink)}
 .btn.primary{background:var(--teal);border-color:var(--teal);color:var(--bg)}
-.portrait-wrap{position:relative;justify-self:center;width:min(100%,340px)}
-.portrait{aspect-ratio:4/5;border-radius:58% 42% 52% 48% / 48% 54% 46% 52%;background:linear-gradient(150deg,var(--teal-soft),var(--teal-line));display:grid;place-items:center;overflow:hidden;position:relative}
-.portrait span{font-family:var(--fh);font-weight:900;font-size:clamp(4rem,9vw,6rem);color:var(--teal)}
+.portrait{aspect-ratio:4/5;width:min(100%,280px);justify-self:center;border-radius:48% 52% 46% 54% / 52% 46% 54% 48%;background:linear-gradient(150deg,var(--teal-soft),var(--teal-line));display:grid;place-items:center;overflow:hidden;position:relative}
+.portrait span{font-family:var(--fh);font-weight:900;font-size:5rem;color:var(--teal)}
 .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center}
-.chip{position:absolute;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;box-shadow:0 10px 30px rgba(0,0,0,.08);font-size:.85rem;line-height:1.3}
-.chip b{display:block;font-family:var(--fh);font-size:1.15rem}
-.chip small{color:var(--muted)}
-.chip.c1{top:6%;right:-6%}.chip.c2{bottom:22%;left:-12%}.chip.c3{bottom:-2%;right:4%}
-@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.portrait-wrap{width:min(78%,300px)}.chip.c2{left:-6%}.chip.c1{right:-4%}}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr}.portrait{display:none}}
 
-/* proof */
-.proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
-.proof .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
-.pf{padding:26px 20px;border-right:1px solid var(--line)}
-.pf:last-child{border-right:0}
-.pf b{display:block;font-family:var(--fh);font-weight:900;font-size:clamp(1.9rem,3.4vw,2.6rem);line-height:1;color:var(--ink)}
-.pf span{display:block;margin-top:8px;font-size:.9rem;color:var(--muted)}
-@media (max-width:760px){.proof .wrap{grid-template-columns:1fr 1fr}.pf:nth-child(2){border-right:0}.pf:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+/* sections */
+.sec{padding:clamp(56px,8vw,96px) 0;border-top:1px solid var(--line)}
+.eyebrow{font-family:var(--fm);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin:0 0 10px}
+.sec h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:900}
+.sec h2 em{color:var(--teal)}
+.sec .intro{color:var(--muted);font-size:1.1rem;margin:10px 0 0;font-style:italic;font-family:var(--fh)}
+.about p{font-size:1.12rem;max-width:66ch;color:var(--body)}
+.about p:first-of-type{margin-top:28px}
+.about strong{color:var(--ink)}
 
-/* caught */
-.bugs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
-.bug{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:12px}
-.bug .tagline{font-family:var(--fm);font-size:.74rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
-.bug h3{font-size:1.35rem}
-.bug h3 mark{background:var(--amber-soft);color:var(--amber);padding:0 5px;border-radius:4px}
-.bug p{color:var(--body);font-size:.97rem;margin:0}
-.bug a{margin-top:auto;font-weight:600;text-decoration:none}
-@media (max-width:860px){.bugs{grid-template-columns:1fr}}
-
-/* projects */
-.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.projects{display:grid;gap:22px;margin-top:40px}
-.proj{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,3vw,34px)}
-.proj-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:start}
-.proj h3{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:900}
-.badge{font-family:var(--fm);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:999px;border:1px solid var(--teal-line);background:var(--teal-soft);color:var(--teal);white-space:nowrap}
-.badge.amber{border-color:color-mix(in srgb,var(--amber) 35%,transparent);background:var(--amber-soft);color:var(--amber)}
-.kind{color:var(--muted);margin:6px 0 0}
-.summary{margin:18px 0 0;max-width:72ch}
-.meta{display:flex;flex-wrap:wrap;gap:22px;margin-top:20px}
-.meta div b{display:block;font-family:var(--fh);font-size:1.5rem;line-height:1}
-.meta div span{font-size:.84rem;color:var(--muted)}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
-.tag{font-family:var(--fm);font-size:.76rem;padding:4px 9px;border-radius:6px;background:var(--surface);border:1px solid var(--line);color:var(--body)}
-.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;align-items:center}
-.actions .btn{padding:10px 16px;font-size:.93rem}
-.demo{font-family:var(--fm);font-size:.8rem;color:var(--teal);background:var(--teal-soft);border:1px solid var(--teal-line);border-radius:8px;padding:8px 12px;margin-top:16px;display:inline-block}
-.case{margin-top:22px;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.case[hidden]{display:none}
-.tabs{display:flex;overflow-x:auto;border-bottom:1px solid var(--line)}
-.tab{flex:0 0 auto;background:none;border:0;border-bottom:3px solid transparent;padding:14px 18px;font:500 .95rem var(--fb);color:var(--muted);cursor:pointer}
-.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--teal)}
-.panel{padding:22px 24px 24px}
-.panel h4{font-family:var(--fb);font-size:1rem;font-weight:700;margin:0 0 6px}
-.panel p:last-child,.panel ul:last-child{margin-bottom:0}
-.panel ul{margin:0 0 1em;padding-left:20px}
-.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;margin-bottom:18px}
-.step{flex:1 1 120px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
-.step b{display:block;font-size:.92rem}
-.step small{color:var(--muted);font-size:.8rem}
-.arrow{align-self:center;color:var(--muted);font-family:var(--fm)}
-@media (max-width:640px){.arrow{display:none}}
-.callout{border-left:4px solid var(--amber);padding:2px 0 2px 16px;margin:0 0 14px;color:var(--ink)}
-.more{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
-.mini{border:1px solid var(--line);border-radius:14px;padding:20px 22px;background:var(--bg)}
-.mini h4{font-family:var(--fh);font-size:1.2rem;margin-bottom:6px}
-.mini p{color:var(--body);font-size:.95rem;margin:0 0 10px}
-.mini a{font-weight:600;text-decoration:none;font-size:.93rem}
-@media (max-width:760px){.more{grid-template-columns:1fr}.proj-head{grid-template-columns:1fr}.badge{justify-self:start}}
-
-/* experience */
-.timeline{list-style:none;margin:40px 0 0;padding:0;position:relative}
-.timeline::before{content:"";position:absolute;left:7px;top:10px;bottom:10px;width:2px;background:var(--line)}
-.role{position:relative;padding:0 0 38px 42px}
-.role:last-child{padding-bottom:0}
-.role::before{content:"";position:absolute;left:0;top:8px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--teal)}
-.role.now::before{background:var(--teal)}
-.when{font-family:var(--fm);font-size:.82rem;color:var(--muted)}
-.role h3{font-size:1.5rem;margin-top:4px}
-.org{color:var(--muted);margin:4px 0 10px}
-.role ul{margin:0;padding-left:20px;max-width:72ch}
-.role li{margin-bottom:6px}
+/* story cards */
+.stories{display:grid;gap:18px;margin-top:34px}
+.story{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:clamp(22px,3vw,30px)}
+.story-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px}
+.story h3{font-size:clamp(1.3rem,2.4vw,1.6rem)}
+.story h3 .ic{font-family:var(--fb);margin-right:8px}
+.story .when{font-family:var(--fm);font-size:.8rem;color:var(--muted);white-space:nowrap}
+.story .tagline{font-style:italic;color:var(--teal);margin:4px 0 12px}
+.story p{color:var(--body);margin:0 0 .8em;max-width:72ch}
+.story p:last-of-type{margin-bottom:0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.tag{font-family:var(--fm);font-size:.76rem;padding:4px 9px;border-radius:6px;background:var(--bg);border:1px solid var(--line);color:var(--body)}
+.links{display:flex;flex-wrap:wrap;gap:16px;margin-top:16px;align-items:center}
+.links a{font-weight:600;text-decoration:none}
+.links a:hover{text-decoration:underline}
+.demo{font-family:var(--fm);font-size:.8rem;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:860px){.grid3{grid-template-columns:1fr}}
+@media (max-width:760px){.grid2{grid-template-columns:1fr}}
 
 /* skills */
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:36px}
-.sk{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:20px}
-.sk h3{font-family:var(--fb);font-size:1rem;font-weight:700;margin-bottom:12px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:30px}
+.sk{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.sk h3{font-family:var(--fb);font-size:1rem;font-weight:700;margin-bottom:10px}
 .sk .tags{margin-top:0}
-.tag.core{background:var(--teal-soft);border-color:var(--teal-line);color:var(--teal)}
-.certs{margin-top:28px;color:var(--body)}
-.certs b{color:var(--ink)}
+.extra{margin-top:24px;color:var(--body)}
+.extra b{color:var(--ink)}
 
-/* contact */
-.hire{background:var(--hire-bg);color:var(--hire-ink);padding:clamp(72px,10vw,128px) 0;text-align:center}
-.hire .eyebrow{color:var(--hire-accent)}
-.hire h2{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:900;color:var(--hire-ink)}
-.hire h2 em{color:var(--hire-accent)}
-.hire p{color:var(--hire-muted);max-width:56ch;margin:20px auto 0}
-.hire .btns{justify-content:center}
-.hire .btn{background:transparent;color:var(--hire-ink);border-color:rgba(247,244,238,.35)}
-.hire .btn:hover{border-color:var(--hire-ink)}
-.hire .btn.primary{background:var(--hire-accent);border-color:var(--hire-accent);color:#062222}
-.hire .facts{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;margin-top:34px;font-family:var(--fm);font-size:.82rem;color:var(--hire-muted)}
-footer{padding:26px 0;font-size:.88rem;color:var(--muted);border-top:1px solid var(--line)}
+/* connect */
+.connect{text-align:center;padding:clamp(72px,10vw,120px) 0;border-top:1px solid var(--line)}
+.connect h2{font-size:clamp(2.2rem,5.5vw,3.8rem);font-weight:900}
+.connect h2 em{color:var(--teal)}
+.connect p{color:var(--body);max-width:52ch;margin:16px auto 0}
+.connect .btns{justify-content:center}
+footer{padding:24px 0;font-size:.88rem;color:var(--muted);border-top:1px solid var(--line)}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
-/* reveal */
-.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
 .reveal.on{opacity:1;transform:none}
 </style>
 </head>
 <body>
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top"><span class="mono">HM</span><b><span class="full">Harshitha Sai Maddukuri</span><span class="short">Harshitha</span></b></a>
-    <a class="l" href="#skills">Skills</a>
+    <a class="brand" href="#top"><span class="mono">HM</span>Harshitha</a>
+    <a class="l" href="#about">About</a>
     <a class="l" href="#experience">Experience</a>
-    <a class="l" href="#work">Projects</a>
-    <a class="l" href="#education">Education</a>
-    <a class="cta" href="#contact">Hire me</a>
+    <a class="l" href="#projects">Projects</a>
+    <a class="l" href="#skills">Skills</a>
+    <a class="l" href="#connect">Contact</a>
     <button class="theme" id="themeBtn" aria-label="Switch light or dark theme">◐</button>
   </div>
 </header>
 
 <main id="top">
+<!-- HERO -->
 <section class="hero">
   <div class="wrap">
     <div>
-      <p class="eyebrow" style="margin-bottom:14px">Summary</p>
       <span class="status"><span class="pulse" aria-hidden="true"></span>Open to full-time SWE roles · May 2027</span>
       <h1>I ship code <em>that actually</em> works.</h1>
-      <p class="lede">I'm a <strong>full-stack software engineer</strong> finishing my MS in Computer Science at <strong>Northeastern University</strong>. I've built production APIs at <strong>Virtusa</strong>, I'm interning at <strong>IpserLab</strong> now, and I've shipped two full-stack apps you can try right now.</p>
+      <p class="lede">Full-stack software engineer, MS in Computer Science at Northeastern University, and currently a Software Engineer Intern at IpserLab.</p>
       <div class="btns">
-        <a class="btn primary" href="mailto:harshithasai035@gmail.com?subject=Full-Time%20SWE%20Opportunity%20for%20Harshitha">Email me</a>
+        <a class="btn primary" href="#connect">Let's talk</a>
         <a class="btn" href="resume.pdf" target="_blank" rel="noopener">View resume</a>
-        <a class="btn" href="#work">See my work ↓</a>
       </div>
     </div>
-    <div class="portrait-wrap" aria-hidden="true">
-      <div class="portrait">
-        <span>HM</span>
-        <img src="profilepic.jpg" alt="" onerror="this.remove()">
-      </div>
-      <div class="chip c1"><b>Now</b><small>SWE intern, IpserLab</small></div>
-      <div class="chip c2"><b>84.98%</b><small>ML model accuracy</small></div>
-      <div class="chip c3"><b>Published</b><small>IJFANS journal</small></div>
+    <div class="portrait" aria-hidden="true">
+      <span>HM</span>
+      <img src="profilepic.jpg" alt="" onerror="this.remove()">
     </div>
   </div>
 </section>
 
-<section class="proof" aria-label="Highlights">
+<!-- ABOUT -->
+<section class="sec about" id="about">
   <div class="wrap">
-    <div class="pf"><b>2</b><span>SWE internships: Virtusa and IpserLab</span></div>
-    <div class="pf"><b>2</b><span>Live apps: Snippr and Kambaz</span></div>
-    <div class="pf"><b>1</b><span>Published research paper</span></div>
-    <div class="pf"><b>May '27</b><span>Ready to start full-time</span></div>
+    <p class="eyebrow reveal">About me</p>
+    <h2 class="reveal">Built in production, <em>sharpened in grad school.</em></h2>
+    <p class="reveal">I'm <strong>Harshitha</strong>, a full-stack software engineer finishing my MS in Computer Science at Northeastern. I like the whole path of a feature: the schema underneath it, the API in the middle, and the screen someone actually clicks.</p>
+    <p class="reveal">At <strong>Virtusa</strong>, I worked on a production client application in two-week sprints, building C# and .NET services, writing tests before anything shipped, and chasing bugs down to their root cause. Now I'm interning at <strong>IpserLab</strong>, working on backend data access in Java and PostgreSQL for a React product.</p>
+    <p class="reveal">In between, I built <strong>Snippr</strong> on my own, from the database to deployment, and spent a semester on machine learning that taught me to be suspicious of results that look too good. Next, I'm looking for a full-time role starting May 2027 where I can keep shipping things people use.</p>
   </div>
 </section>
 
-
-
-
-
-<section class="sec alt" id="skills" aria-labelledby="skills-h">
-  <div class="wrap">
-    <p class="eyebrow reveal">Skills</p>
-    <h2 class="sec-title reveal" id="skills-h">Technical <em>skills.</em></h2>
-    <div class="skills">
-      <div class="sk reveal"><h3>Frontend</h3><div class="tags"><span class="tag core">React</span><span class="tag core">Next.js</span><span class="tag core">TypeScript</span><span class="tag">Tailwind CSS</span><span class="tag">Redux</span><span class="tag">React Native</span></div></div>
-      <div class="sk reveal"><h3>Backend</h3><div class="tags"><span class="tag core">Node.js</span><span class="tag core">Express</span><span class="tag core">Java / JDBC</span><span class="tag">C# / .NET</span><span class="tag">Django</span><span class="tag">REST APIs</span></div></div>
-      <div class="sk reveal"><h3>Data</h3><div class="tags"><span class="tag core">PostgreSQL</span><span class="tag core">MongoDB</span><span class="tag">MySQL</span><span class="tag">Supabase</span><span class="tag">Mongoose</span><span class="tag">Schema design</span></div></div>
-      <div class="sk reveal"><h3>ML and languages</h3><div class="tags"><span class="tag core">Python</span><span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">scikit-learn</span><span class="tag">NLTK</span><span class="tag">pandas</span></div></div>
-      <div class="sk reveal"><h3>Tools and practice</h3><div class="tags"><span class="tag core">Git</span><span class="tag">CI/CD</span><span class="tag">Vercel</span><span class="tag">Render</span><span class="tag">Azure</span><span class="tag">Unit testing</span><span class="tag">Agile</span></div></div>
-    </div>
-    <p class="certs reveal"><b>Certifications:</b> IBM Full Stack Developer, Microsoft Azure Fundamentals (AZ-900), Python for Everybody, Anthropic AI Fluency. <b>Languages:</b> English, Telugu, Hindi.</p>
-  </div>
-</section>
-<section class="sec" id="experience" aria-labelledby="exp-h">
+<!-- EXPERIENCE -->
+<section class="sec" id="experience">
   <div class="wrap">
     <p class="eyebrow reveal">Experience</p>
-    <h2 class="sec-title reveal" id="exp-h">Where I've <em>worked.</em></h2>
-    <ol class="timeline" reversed>
-      <li class="role now reveal">
-        <div class="when">Sep 2026 – Dec 2026</div>
-        <h3>Software Engineer Intern</h3>
-        <div class="org">IpserLab, LLC · Remote</div>
-        <ul><li>Develop backend data-access and persistence code in Java and JDBC on PostgreSQL for a full-stack React product.</li><li>Work with a small engineering team on design, testing, and feature planning, with code reviewed by senior engineers.</li></ul>
-      </li>
-      <li class="role reveal">
-        <div class="when">Dec 2022 – Apr 2023</div>
-        <h3>Software Engineer Intern</h3>
-        <div class="org">Virtusa · India</div>
-        <ul><li>Built and maintained REST APIs and backend services in C# and .NET for a production client application with active users.</li><li>Wrote unit tests for every feature before release and reviewed teammates' code in two-week Agile sprints.</li><li>Traced production defects to root cause across development and test environments and documented each fix.</li></ul>
-      </li>
-    </ol>
+    <h2 class="reveal">Where I've <em>worked.</em></h2>
+    <p class="intro reveal">Real teams, real codebases, real deadlines.</p>
+    <div class="stories">
+      <article class="story reveal">
+        <div class="story-head"><h3><span class="ic" aria-hidden="true">💼</span>IpserLab · Software Engineer Intern</h3><span class="when">Sep 2026 – Dec 2026 · Remote</span></div>
+        <p class="tagline">Backend work at a startup</p>
+        <p>I work on programming, design, testing, and ideation for a software product built with Java, JDBC, PostgreSQL, and React. My focus is the backend data access and persistence layer, with senior engineers mentoring me directly.</p>
+        <div class="tags"><span class="tag">Java</span><span class="tag">JDBC</span><span class="tag">PostgreSQL</span><span class="tag">React</span></div>
+      </article>
+      <article class="story reveal">
+        <div class="story-head"><h3><span class="ic" aria-hidden="true">🏢</span>Virtusa · Software Engineer Intern</h3><span class="when">Dec 2022 – Apr 2023</span></div>
+        <p class="tagline">Production code, real users</p>
+        <p>I owned features from design through testing and production deployment, building backend services and REST APIs in C# and .NET for a client application with active users.</p>
+        <p>Every feature shipped with unit tests, every sprint had code reviews, and when production bugs showed up, I traced them to the root cause and kept the team's documentation up to date.</p>
+        <div class="tags"><span class="tag">C#</span><span class="tag">.NET</span><span class="tag">REST APIs</span><span class="tag">Unit testing</span><span class="tag">Agile</span></div>
+      </article>
+    </div>
   </div>
 </section>
-<section class="sec alt" id="work" aria-labelledby="work-h">
+
+<!-- PROJECTS -->
+<section class="sec" id="projects">
   <div class="wrap">
     <p class="eyebrow reveal">Projects</p>
-    <h2 class="sec-title reveal" id="work-h">Things I've <em>built.</em></h2>
-    <p class="sec-sub reveal">Open any case study for the full story: the problem, how it works, the hard part, and the result.</p>
+    <h2 class="reveal">Things I've <em>built.</em></h2>
+    <p class="intro reveal">Each one taught me something I still use.</p>
+    <div class="stories">
+      <article class="story reveal" id="snippr">
+        <div class="story-head"><h3><span class="ic" aria-hidden="true">✂️</span>Snippr</h3><span class="when">Full-stack · solo</span></div>
+        <p class="tagline">My own app, start to finish</p>
+        <p>A code snippet manager I designed and shipped on my own. I designed the PostgreSQL schema from scratch, built a type-safe REST API with secure authentication, and deployed it on Vercel with automated CI/CD.</p>
+        <p>Once people started using it, their behavior exposed a flaw in my schema. I refactored the data layer and retested every affected route and page before redeploying, so no bad data reached anyone.</p>
+        <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span><span class="tag">Tailwind CSS</span><span class="tag">Vercel</span></div>
+        <div class="links"><a href="https://snippr-sand.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/harshithasai-maddukuri/snippr" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
 
-    <h3 class="reveal" id="caught-h" style="font-size:clamp(1.4rem,2.6vw,1.8rem);margin-top:44px">The <em style="color:var(--teal)">hard parts.</em></h3>
-    <p class="sec-sub reveal" style="margin-top:8px">Getting something to run is the easy half. These are the problems in each project that took real thinking.</p>
-    <div class="bugs">
-      <div class="bug reveal">
-        <span class="tagline">Mental health ML</span>
-        <h3><mark>Label leakage</mark> inflating our results</h3>
-        <p>The scores looked too good. We traced it to leaked labels, fixed the pipeline, and reran all 60 configurations before reporting anything.</p>
-        <a href="#mh" data-open="mh" data-tab="2">Read the story →</a>
+      <article class="story reveal" id="mh">
+        <div class="story-head"><h3><span class="ic" aria-hidden="true">🧠</span>Mental Health Detection from Reddit</h3><span class="when">Machine learning</span></div>
+        <p class="tagline">The model that looked too good</p>
+        <p>An NLP pipeline that classifies 5,957 Reddit posts, tested across 60 configurations of TF-IDF features, SMOTE class balancing, and five classifiers.</p>
+        <p>Partway through, the scores looked suspicious. I found a label leakage bug, fixed it, and reran the whole pipeline before reporting anything. The honest result: <strong>84.98% accuracy</strong> and <strong>0.8371 macro F1</strong>, stable across five-fold cross-validation.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">NLTK</span><span class="tag">TF-IDF</span><span class="tag">SMOTE</span></div>
+        <div class="links"><a href="https://github.com/harshithasai-maddukuri/mental-health-reddit-detection" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+
+      <div class="grid2">
+        <article class="story reveal" id="kambaz">
+          <div class="story-head"><h3><span class="ic" aria-hidden="true">📚</span>Kambaz LMS</h3></div>
+          <p class="tagline">Three kinds of users, one platform</p>
+          <p>A learning management system where students, instructors, and admins each see only what's theirs. I built the backend REST APIs with role-based access control and designed the schema for courses, assignments, enrollments, and grades.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
+          <div class="links"><a href="https://kambaz-next-js-qpiv.vercel.app/Account/Signin" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/harshithasai-maddukuri/kambaz-next-js" target="_blank" rel="noopener">GitHub ↗</a></div>
+          <p class="demo" style="margin-top:10px">Demo login: harshitha / harshitha123</p>
+        </article>
+        <article class="story reveal" id="sig">
+          <div class="story-head"><h3><span class="ic" aria-hidden="true">✍️</span>Signature Verification</h3></div>
+          <p class="tagline">Published research, 2022</p>
+          <p>An AI system that checks whether a signature is genuine. I built the testing pipeline around a Siamese neural network trained with contrastive loss and a Django backend, then tuned the false accept and false reject thresholds. It reached <strong>91.6% accuracy</strong> on 750 signatures from 30 writers.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Deep learning</span><span class="tag">Django</span></div>
+          <div class="links"><a href="https://www.ijfans.org/index.php/Journal/article/view/13018" target="_blank" rel="noopener">Read the paper ↗</a></div>
+        </article>
       </div>
-      <div class="bug reveal">
-        <span class="tagline">Kambaz</span>
-        <h3>Modeling <mark>many-to-many</mark> enrollments</h3>
-        <p>Students take many courses and courses have many students. A separate enrollments collection kept that logic in one place.</p>
-        <a href="#kambaz" data-open="kambaz" data-tab="2">Read the story →</a>
-      </div>
-      <div class="bug reveal">
-        <span class="tagline">Signature verification</span>
-        <h3>Trading <mark>false accepts</mark> against false rejects</h3>
-        <p>Set the threshold too loose and forgeries get in. Too strict and real people get locked out. We measured both to pick the line.</p>
-        <a href="#sig" data-open="sig" data-tab="2">Read the story →</a>
-      </div>
-    </div>
-    <div class="projects" style="margin-top:56px">
-      <!-- SNIPPR -->
-      <article class="proj reveal" id="snippr">
-        <div class="proj-head">
-          <div><h3>Snippr</h3><p class="kind">Full-stack code snippet manager, built and deployed solo</p></div>
-          <span class="badge">Live</span>
-        </div>
-        <p class="summary">Save your code snippets, tag them by language, find them again in seconds, and share them through a public profile link. Built with Next.js, TypeScript, and Supabase, and deployed on Vercel.</p>
-        <div class="meta"><div><b>/u/you</b><span>public profile pages</span></div><div><b>Live</b><span>search as you type</span></div><div><b>1 click</b><span>copy to clipboard</span></div></div>
-        <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">Tailwind CSS</span><span class="tag">Vercel</span></div>
-        <div class="actions">
-          <button class="btn primary" data-toggle="snippr" aria-expanded="false" aria-controls="case-snippr">Read the case study</button>
-          <a class="btn" href="https://snippr-sand.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
-          <a class="btn" href="https://github.com/harshithasai-maddukuri/snippr" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-        <div class="case" id="case-snippr" hidden>
-          <div class="tabs" role="tablist" aria-label="Snippr case study"><button class="tab" role="tab">The problem</button><button class="tab" role="tab">How it works</button><button class="tab" role="tab">The hard part</button><button class="tab" role="tab">Result</button></div>
-          <div class="panel" role="tabpanel"><p>Developers keep useful code scattered across old repos, notes apps, and chat threads, then can't find it when they need it. Snippr gives those snippets one searchable home, plus a link you can send to anyone.</p><h4>My role</h4><p>Everything, end to end: product decisions, database, frontend, and deployment.</p></div>
-          <div class="panel" role="tabpanel" hidden>
-            <div class="flow"><div class="step"><b>Next.js + TypeScript</b><small>Tailwind UI</small></div><span class="arrow">→</span><div class="step"><b>Supabase</b><small>auth + data access</small></div><span class="arrow">→</span><div class="step"><b>PostgreSQL</b><small>users and snippets</small></div><span class="arrow">→</span><div class="step"><b>Vercel</b><small>hosting</small></div></div>
-            <p>You save a snippet with a title and a language tag. Search filters by title or language as you type, and every snippet has a one-click copy button. Each user also gets a public page at <code>/u/username</code>.</p>
-          </div>
-          <div class="panel" role="tabpanel" hidden>
-            <p class="callout">A public profile has to show your snippets to anyone, with no login, while only you can add or delete them.</p>
-            <p>That means the app has two kinds of visitors on the same data: the owner, who can change things, and everyone else, who can only read. Getting that split right is what makes sharing safe.</p>
-          </div>
-          <div class="panel" role="tabpanel" hidden><p>Snippr is live and anyone can try it. Open the demo, save a snippet, and share your <code>/u/username</code> link.</p></div>
-        </div>
-      </article>
-
-      <!-- KAMBAZ -->
-      <article class="proj reveal" id="kambaz">
-        <div class="proj-head">
-          <div><h3>Kambaz</h3><p class="kind">Full-stack learning management system</p></div>
-          <span class="badge">Live demo</span>
-        </div>
-        <p class="summary">A course platform with separate experiences for students, instructors, and admins. Next.js and Redux on the front, a Node and Express API on MongoDB Atlas behind it, deployed on Vercel and Render.</p>
-        <div class="meta"><div><b>6</b><span>modules</span></div><div><b>3</b><span>user roles</span></div><div><b>2</b><span>hosts: Vercel + Render</span></div></div>
-        <div class="tags"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Redux</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Mongoose</span></div>
-        <span class="demo">Demo login: harshitha / harshitha123</span>
-        <div class="actions">
-          <button class="btn primary" data-toggle="kambaz" aria-expanded="false" aria-controls="case-kambaz">Read the case study</button>
-          <a class="btn" href="https://kambaz-next-js-qpiv.vercel.app/Account/Signin" target="_blank" rel="noopener">Live demo ↗</a>
-          <a class="btn" href="https://github.com/harshithasai-maddukuri/kambaz-next-js" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-        <div class="case" id="case-kambaz" hidden>
-          <div class="tabs" role="tablist" aria-label="Kambaz case study"><button class="tab" role="tab">The problem</button><button class="tab" role="tab">How it works</button><button class="tab" role="tab">The hard part</button><button class="tab" role="tab">Result</button></div>
-          <div class="panel" role="tabpanel"><p>A learning platform has three very different users. Students enroll and submit work, instructors build and manage courses, and admins oversee everything. Each one needs to see and change only what's theirs.</p></div>
-          <div class="panel" role="tabpanel" hidden>
-            <div class="flow"><div class="step"><b>Next.js + Redux</b><small>TypeScript, Tailwind</small></div><span class="arrow">→</span><div class="step"><b>Express API</b><small>modular routes + DAOs</small></div><span class="arrow">→</span><div class="step"><b>Session auth</b><small>role-based access</small></div><span class="arrow">→</span><div class="step"><b>MongoDB Atlas</b><small>Mongoose schemas</small></div></div>
-            <p>The backend is organized into routes and data-access objects for courses, modules, users, and enrollments, with full create, read, update, and delete on each. Every request is checked against the user's role before it touches data.</p>
-          </div>
-          <div class="panel" role="tabpanel" hidden>
-            <p class="callout">Students and courses are many-to-many: one student takes many courses, and one course has many students.</p>
-            <p>I modeled that with a dedicated enrollments collection and used Mongoose <code>populate()</code> to join it back to users and courses, which keeps enrollment logic in one place instead of duplicating it in both records.</p>
-          </div>
-          <div class="panel" role="tabpanel" hidden><p>A working, deployed platform with the frontend on Vercel and the backend on Render, configured with separate environment variables for local and production and Git-based branch workflows.</p></div>
-        </div>
-      </article>
-
-      <!-- MENTAL HEALTH -->
-      <article class="proj reveal" id="mh">
-        <div class="proj-head">
-          <div><h3>Mental health detection from Reddit</h3><p class="kind">Machine learning, CS6140 group project</p></div>
-          <span class="badge amber">84.98% accuracy</span>
-        </div>
-        <p class="summary">A text classifier that recognizes mental health signals in Reddit posts. I led evaluation: cross-validation, error analysis, and the experiments that told us which model to trust.</p>
-        <div class="meta"><div><b>5,957</b><span>posts</span></div><div><b>60</b><span>configurations</span></div><div><b>0.8371</b><span>macro F1</span></div></div>
-        <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">NLTK</span><span class="tag">TF-IDF</span><span class="tag">SMOTE</span><span class="tag">pandas</span></div>
-        <div class="actions">
-          <button class="btn primary" data-toggle="mh" aria-expanded="false" aria-controls="case-mh">Read the case study</button>
-          <a class="btn" href="https://github.com/harshithasai-maddukuri/mental-health-reddit-detection" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-        <div class="case" id="case-mh" hidden>
-          <div class="tabs" role="tablist" aria-label="Mental health case study"><button class="tab" role="tab">The problem</button><button class="tab" role="tab">How it works</button><button class="tab" role="tab">What went wrong</button><button class="tab" role="tab">Result</button></div>
-          <div class="panel" role="tabpanel"><p>People often describe how they're feeling in public posts long before they ask for help. We wanted to measure, honestly, how well classic NLP methods can recognize those signals.</p><h4>My contributions</h4><p>Model evaluation, stratified 5-fold cross-validation, confusion matrices, ROC and learning curves, error analysis, the ablation study, and the report and presentation.</p></div>
-          <div class="panel" role="tabpanel" hidden>
-            <div class="flow"><div class="step"><b>5,957 posts</b><small>raw Reddit text</small></div><span class="arrow">→</span><div class="step"><b>Clean</b><small>NLTK</small></div><span class="arrow">→</span><div class="step"><b>TF-IDF</b><small>text to features</small></div><span class="arrow">→</span><div class="step"><b>SMOTE</b><small>balance classes</small></div><span class="arrow">→</span><div class="step"><b>Compare models</b><small>60 configs, 5-fold CV</small></div></div>
-            <p>TF-IDF turns each post into weighted word features, and SMOTE creates synthetic examples of the smaller classes so the model doesn't just learn to guess the majority. We compared classifiers across 60 configurations and Random Forest came out on top.</p>
-          </div>
-          <div class="panel" role="tabpanel" hidden><p class="callout">Partway through, we found label information leaking into the features, which made results look better than they really were.</p><p>We fixed the pipeline and reran all 60 configurations from scratch. Every number on this page comes from the corrected run.</p></div>
-          <div class="panel" role="tabpanel" hidden><p>Random Forest reached 84.98% accuracy and 0.8371 macro F1, stable across 5-fold cross-validation. I report macro F1 next to accuracy because with uneven classes, accuracy alone can hide a model that ignores the smaller groups.</p></div>
-        </div>
-      </article>
-
-      <!-- SIGNATURE VERIFICATION-->
-      <article class="proj reveal" id="sig">
-        <div class="proj-head">
-          <div><h3>Signature verification with Siamese networks</h3><p class="kind">Deep learning research, undergraduate · 2022</p></div>
-          <span class="badge">Published · IJFANS</span>
-        </div>
-        <p class="summary">A system that decides whether a signature is genuine by comparing it with a known sample. Our team of five built the full pipeline and published it in IJFANS in 2022.</p>
-        <div class="meta"><div><b>91.6%</b><span>accuracy</span></div><div><b>750</b><span>signatures</span></div><div><b>30</b><span>writers</span></div></div>
-        <div class="tags"><span class="tag">Python</span><span class="tag">Deep learning</span><span class="tag">CNN</span><span class="tag">Django</span><span class="tag">Java</span></div>
-        <div class="actions">
-          <button class="btn primary" data-toggle="sig" aria-expanded="false" aria-controls="case-sig">Read the case study</button>
-          <a class="btn" href="https://www.ijfans.org/index.php/Journal/article/view/13018" target="_blank" rel="noopener">Read the paper ↗</a>
-        </div>
-        <div class="case" id="case-sig" hidden>
-          <div class="tabs" role="tablist" aria-label="Signature verification case study"><button class="tab" role="tab">The problem</button><button class="tab" role="tab">How it works</button><button class="tab" role="tab">The hard part</button><button class="tab" role="tab">Result</button></div>
-          <div class="panel" role="tabpanel"><p>Forged signatures are a real fraud risk, and checking them by eye is slow and inconsistent. An automated checker has to be careful in both directions: never accept a forgery, and don't reject the real person.</p></div>
-          <div class="panel" role="tabpanel" hidden>
-            <div class="flow"><div class="step"><b>Upload</b><small>web interface</small></div><span class="arrow">→</span><div class="step"><b>Preprocess</b><small>clean, normalize</small></div><span class="arrow">→</span><div class="step"><b>Siamese CNN</b><small>contrastive loss</small></div><span class="arrow">→</span><div class="step"><b>Decision</b><small>distance vs. threshold</small></div></div>
-            <p>A Siamese network runs two signatures through the same CNN and measures how far apart they are. Trained with contrastive loss, it learns to pull genuine pairs together and push forgeries apart. A threshold on that distance makes the final call.</p>
-          </div>
-          <div class="panel" role="tabpanel" hidden><p class="callout">Where you set the threshold is a trade-off. Too loose and forgeries get through. Too strict and genuine signers get rejected.</p><p>We measured false accept and false reject rates to choose a threshold that balances the two.</p></div>
-          <div class="panel" role="tabpanel" hidden><p>The model reached 91.6% accuracy on a dataset of 750 signatures from 30 people, and works writer-independently, meaning it can verify signatures from people it never saw during training. The paper, "A Siamese Network based Writer Independent Offline Signature Verification," was published in IJFANS Vol. 11, No. 12 (2022).</p></div>
-        </div>
-      </article>
-    </div>
-
-    <div class="more">
-      <div class="mini reveal"><h4>Self-balancing binary search trees</h4><p>AVL and Red-Black trees from scratch in Python with a full test suite, benchmarked on 1K–10K nodes with random, sorted, and reverse-sorted inputs. CS5800 Algorithms.</p></div>
-      <div class="mini reveal"><h4>IBM Full Stack Developer certificate</h4><p>Eight projects across React, Node.js and Express, Django, and Flask, including a full-stack capstone and a REST API with authentication.</p><a href="https://github.com/harshithasai0876" target="_blank" rel="noopener">See all repos ↗</a></div>
     </div>
   </div>
 </section>
-<section class="sec" id="education" aria-labelledby="edu-h">
+
+<!-- SKILLS + EDUCATION -->
+<section class="sec" id="skills">
   <div class="wrap">
-    <p class="eyebrow reveal">Education</p>
-    <h2 class="sec-title reveal" id="edu-h">Where I <em>learned.</em></h2>
-    <ol class="timeline" reversed>
-      <li class="role now reveal">
-        <div class="when">Jan 2025 – May 2027</div>
-        <h3>MS in Computer Science</h3>
-        <div class="org">Northeastern University, Khoury College · Boston</div>
-        <ul><li>Algorithms, Machine Learning, Database Management Systems, Web Development, Human-Computer Interaction, Cybersecurity.</li></ul>
-      </li>
-      <li class="role reveal">
-        <div class="when">2019 – 2023</div>
-        <h3>B.Tech in Computer Science and Engineering</h3>
-        <div class="org">Vasireddy Venkatadri International Technological University · India</div>
-        <ul><li>Co-authored published research on Siamese networks for signature verification.</li></ul>
-      </li>
-    </ol>
+    <p class="eyebrow reveal">Skills and education</p>
+    <h2 class="reveal">What I <em>work with.</em></h2>
+    <div class="skills">
+      <div class="sk reveal"><h3>Languages</h3><div class="tags"><span class="tag">Java</span><span class="tag">C#</span><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">SQL</span></div></div>
+      <div class="sk reveal"><h3>Frontend</h3><div class="tags"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">Responsive design</span></div></div>
+      <div class="sk reveal"><h3>Backend</h3><div class="tags"><span class="tag">Node.js</span><span class="tag">.NET</span><span class="tag">Django</span><span class="tag">REST APIs</span></div></div>
+      <div class="sk reveal"><h3>Data and ML</h3><div class="tags"><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">MySQL</span><span class="tag">scikit-learn</span><span class="tag">pandas</span></div></div>
+      <div class="sk reveal"><h3>Tools</h3><div class="tags"><span class="tag">Git</span><span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">Azure</span><span class="tag">Vercel</span><span class="tag">Linux</span></div></div>
+    </div>
+    <div class="grid2" style="margin-top:22px">
+      <div class="story reveal"><h3 style="font-size:1.25rem">🎓 Northeastern University</h3><p class="tagline" style="margin-bottom:4px">MS in Computer Science · Jan 2025 – May 2027</p><p>Algorithms, Machine Learning, DBMS, Web Development, Program Design Paradigms, HCI, Cyber Security.</p></div>
+      <div class="story reveal"><h3 style="font-size:1.25rem">🎓 Vasireddy Venkatadri International Technological University</h3><p class="tagline" style="margin-bottom:4px">B.Tech in Computer Science and Engineering · 2019 – 2023</p><p>Where I co-authored my first published research paper.</p></div>
+    </div>
+    <p class="extra reveal"><b>Certifications:</b> IBM Full Stack Developer, Microsoft AZ-900, Python for Everybody, AI for Everybody, Anthropic AI Fluency. <b>Languages:</b> Telugu, Hindi, English.</p>
   </div>
 </section>
-<section class="hire" id="contact" aria-labelledby="contact-h">
+
+<!-- OFF SCREEN -->
+<section class="sec" id="offscreen">
   <div class="wrap">
-    <p class="eyebrow">Let's talk</p>
-    <h2 id="contact-h">Let's build something<br><em>worth shipping.</em></h2>
-    <p>I'm looking for full-time software engineering roles starting May 2027, in full-stack, backend, or frontend teams. If you're hiring, I'd love to hear from you.</p>
+    <p class="eyebrow reveal">Outside of work</p>
+    <h2 class="reveal">A sketchbook, a good story, <em>and a nice view.</em></h2>
+    <div class="stories">
+      <div class="grid3">
+        <div class="story reveal"><h3 style="font-size:1.25rem"><span class="ic" aria-hidden="true">✏️</span>Drawing</h3><p style="margin-top:8px">My favorite way to switch off. Give me a pencil and some quiet time and I'm happy.</p></div>
+        <div class="story reveal"><h3 style="font-size:1.25rem"><span class="ic" aria-hidden="true">🎬</span>Shows and movies</h3><p style="margin-top:8px">Always up for a good show or movie, especially one with a story that stays with you.</p></div>
+        <div class="story reveal"><h3 style="font-size:1.25rem"><span class="ic" aria-hidden="true">🌅</span>Finding a view</h3><p style="margin-top:8px">I love heading out just to sit somewhere beautiful and take in the scenery.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section class="connect" id="connect">
+  <div class="wrap">
+    <p class="eyebrow">Get in touch</p>
+    <h2>Let's build something <em>together.</em></h2>
+    <p>I'm looking for full-time software engineering roles starting May 2027. If you're hiring, or just want to talk about something I've built, I'd love to hear from you.</p>
     <div class="btns">
-      <a class="btn primary" href="mailto:harshithasai035@gmail.com?subject=Full-Time%20SWE%20Opportunity%20for%20Harshitha">harshithasai035@gmail.com</a>
+      <a class="btn primary" href="mailto:harshithamaddukuri@outlook.com?subject=Hi%20Harshitha">Email</a>
+      <a class="btn" href="https://www.linkedin.com/in/harshitha-sai-maddukuri-ab0726192" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/harshithasai-maddukuri" target="_blank" rel="noopener">GitHub</a>
       <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-      <a class="btn" href="https://www.linkedin.com/in/harshitha-sai-maddukuri-ab0726192" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a class="btn" href="https://github.com/harshithasai-maddukuri" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
-    <div class="facts"><span>Boston, MA</span><span>On-site, hybrid, or remote</span><span>Full-time from May 2027 (OPT)</span></div>
   </div>
 </section>
 </main>
 
-<footer><div class="wrap"><span>Harshitha Sai Maddukuri</span><span>© 2026 · Built from scratch</span></div></footer>
+<footer><div class="wrap"><span>Harshitha Sai Maddukuri · Boston, MA</span><span>© 2026</span></div></footer>
 
 <script>
 (function(){
@@ -471,31 +288,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     var nx=cur==='dark'?'light':'dark';root.setAttribute('data-theme',nx);
     try{localStorage.setItem('theme',nx);}catch(e){}
   });
-  function select(c,i){
-    c.querySelectorAll('.tab').forEach(function(t,j){t.setAttribute('aria-selected',j===i?'true':'false');t.tabIndex=j===i?0:-1;});
-    c.querySelectorAll('.panel').forEach(function(p,j){p.hidden=j!==i;});
-  }
-  document.querySelectorAll('.case').forEach(function(c){
-    var tabs=c.querySelectorAll('.tab'),panels=c.querySelectorAll('.panel');
-    tabs.forEach(function(t,i){
-      t.id=c.id+'-t'+i;panels[i].id=c.id+'-p'+i;t.setAttribute('aria-controls',panels[i].id);panels[i].setAttribute('aria-labelledby',t.id);
-      t.addEventListener('click',function(){select(c,i);});
-      t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){var n=(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;select(c,n);tabs[n].focus();}});
-    });
-    select(c,0);
-  });
-  function open(key,tab){
-    var c=document.getElementById('case-'+key),b=document.querySelector('[data-toggle="'+key+'"]');
-    c.hidden=false;b.setAttribute('aria-expanded','true');b.textContent='Close case study';
-    if(typeof tab==='number')select(c,tab);
-  }
-  document.querySelectorAll('[data-toggle]').forEach(function(b){
-    b.addEventListener('click',function(){
-      var k=b.dataset.toggle,c=document.getElementById('case-'+k);
-      if(c.hidden)open(k);else{c.hidden=true;b.setAttribute('aria-expanded','false');b.textContent='Read the case study';}
-    });
-  });
-  document.querySelectorAll('[data-open]').forEach(function(a){a.addEventListener('click',function(){open(a.dataset.open,parseInt(a.dataset.tab,10));});});
   var els=document.querySelectorAll('.reveal');
   if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on');});return;}
   var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.08});
